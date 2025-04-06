@@ -11,7 +11,7 @@ import os
 
 set_tracing_disabled(True)
 
-""" # ollama client
+# ollama client
 client = AsyncOpenAI(
     base_url="http://localhost:11434/v1"
 )
@@ -30,7 +30,7 @@ result = Runner.run_sync(agent, "Write a function that takes a list of numbers a
 print(result.final_output) """
 
 
-""" # Option 2 : Set the model at Runner instance
+# Option 2 : Set the model at Runner instance
 client = AsyncOpenAI(
     base_url="http://localhost:11434/v1"
 )
@@ -54,7 +54,7 @@ result = Runner.run_sync(agent, "Write a function that takes a list of numbers a
 print(result.final_output) """
 
 
-""" # option 3 : Set the client at the global instance 
+# option 3 : Set the client at the global instance 
 client = AsyncOpenAI(
     base_url="http://localhost:11434/v1"
 )
